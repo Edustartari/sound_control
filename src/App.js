@@ -43,10 +43,10 @@ class App extends React.Component {
 			return;
 		}
 
-		this.sound1 = new Howl({ src: [sounds_list[this.state.rhythm].sound1], volume: this.state.volume.sound1, rate: this.state.velocity + 0.5 });
-		this.sound2 = new Howl({ src: [sounds_list[this.state.rhythm].sound2], volume: this.state.volume.sound2, rate: this.state.velocity + 0.5 });
-		this.sound3 = new Howl({ src: [sounds_list[this.state.rhythm].sound3], volume: this.state.volume.sound3, rate: this.state.velocity + 0.5 });
-		this.sound4 = new Howl({ src: [sounds_list[this.state.rhythm].sound4], volume: this.state.volume.sound4, rate: this.state.velocity + 0.5 });
+		this.sound1 = new Howl({ src: [sounds_list[this.state.rhythm].sound1], volume: this.state.volume.sound1, rate: this.state.velocity + 0.5, loop: true });
+		this.sound2 = new Howl({ src: [sounds_list[this.state.rhythm].sound2], volume: this.state.volume.sound2, rate: this.state.velocity + 0.5, loop: true });
+		this.sound3 = new Howl({ src: [sounds_list[this.state.rhythm].sound3], volume: this.state.volume.sound3, rate: this.state.velocity + 0.5, loop: true });
+		this.sound4 = new Howl({ src: [sounds_list[this.state.rhythm].sound4], volume: this.state.volume.sound4, rate: this.state.velocity + 0.5, loop: true });
 
 		this.sound1.play();
 		this.sound2.play();
