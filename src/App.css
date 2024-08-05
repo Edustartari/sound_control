@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.batuque-background{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.batuque-header{
+    font-size: 17px;
+    font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.batuque-menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
 }
+.batuque-menu-select{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.batuque-menu-player{
+    display: flex;
+    align-items: center;
 }
+.batuque-menu-player-play{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.batuque-menu-player-pause{
+    margin: 0 0 0 10px;
+}
+.batuque-container{
+    flex: 1 1;
+    display: flex;
+    justify-content: space-between;
+}
+.batuque-instrument{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.batuque-footer{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    width: 100%;
+}
+.batuque-footer-speed{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.batuque-footer-speed-title{
+
+}
+.batuque-footer-speed-control{
+    width: 100%;
+
+}
+.batuque-footer-speed-number{
+    width: 20px;
+    text-align: center;
+}
+.batuque-instrument-icon{
+    margin: 0 0 10px 0;
+}
+.batuque-instrument-volume {
 }
